@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+	body {
+		position:relative;
+       	padding-top: 60px;
+		padding-bottom: 0px;
+		background-color: #fff;			
+    }
+		
+	.dropdown-form {
+			padding: 15px;
+	}
+		
+	.form-register {
+		max-width: 300px;
+		padding: 0px 29px 29px;
+		margin: 0 auto 20px;
+		background-color: #ffffff;
+		border: 1px solid #e5e5e5;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+				border-radius: 5px;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+				box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	}
+	   
+	.form-register .form-register-heading { 
+	   	margin-bottom: 10px;
+    }
+       
+	.form-register input[type="text"],
+    .form-register input[type="password"],
+	.form-register input[type="file"] {
+		font-size: 16px;
+		height: auto;
+		margin-bottom: 10px;
+		padding: 7px 9px;
+    }
+	
+	.footer {
+		margin-top: 45px;
+		
+		border-top: 1px solid #e5e5e5;
+	}
+	
+	
+	  
+
+/* Responsive -------------------------------------------------- */
+/* Desktop------------------------- */
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  
+  label{
+  	color:#FFF;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  
+  label{
+  	color:#FFF;
+  }
+  
+  .span6 {
+  	text-align:center;
+  }
+  
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  body {
+    padding-top: 0;
+  }
+  
+  label{
+  	color:#FFF;
+  }
+
+  h1,
+  p, 
+  .span6 {
+    text-align: center;
+  }
+  
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
