@@ -1,15 +1,4 @@
-<div id="help" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="helpLabel" aria-hidden="true">
-	<div class="modal-header">
-    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-        <h3 id="helpLabel">Help</h3>
-    </div> <!-- /modal-header -->
-    <div class="modal-body">
-    	<p>One fine body</p>
-    </div> <!-- /modal-body -->
-    <div class="modal-footer">
-    	<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    </div> <!-- /modal-footer -->
-</div> <!-- /modal -->
+<?php include 'template/modal.php'; ?>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
     	<div class="container">

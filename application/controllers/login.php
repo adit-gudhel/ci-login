@@ -1,6 +1,14 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 class Login extends CI_Controller {
-	
+	/* Login Controller
+	 * This class handles login and register process, 
+	 * validate login and logout process.
+	 *
+	 * @author	Aditya Nursyahbani
+	 * @link	http://aditya-nursyahbani.com/
+	*/
+		
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('account_model');
@@ -23,7 +31,7 @@ class Login extends CI_Controller {
 				
 		$query = $this->account_model->validasi();
 		
-		if($query) // if the user's credentials validated...
+		if($query)
 		{
 			$data = array(
 				'username' => $user,
@@ -32,7 +40,7 @@ class Login extends CI_Controller {
 			$this->session->set_userdata($data);
 			redirect('user');
 		}
-		else // incorrect username or password
+		else 
 		{
 			$this->session->set_flashdata('msg', 'Invalid username and password');
 			redirect('login');
@@ -43,12 +51,11 @@ class Login extends CI_Controller {
 	{
 		$this->load->library('form_validation');
 		
-		// field name, error message, validation rules
 		$this->form_validation->set_rules('fname', 'First Name', 'trim|required');
 		$this->form_validation->set_rules('lname', 'Last Name', 'trim|required');
 		$this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
 		$this->form_validation->set_rules('uname', 'Username', 'trim|required|min_length[4]');
-		$this->form_validation->set_rules('pass', 'Password', 'trim|required|min_length[4]|max_length[32]');
+		$this->form_validation->set_rules('pass', 'Password', 'trim|required|min_length[6]|max_length[16]');
 		$this->form_validation->set_rules('repass', 'Re-Password', 'trim|required|matches[pass]');
 		
 		
@@ -79,5 +86,7 @@ class Login extends CI_Controller {
 		$this->session->sess_destroy();
 		$this->index();
 	}
-
 }
+
+/* End of file login.php */
+/* Location: ./application/controllers/login.php */
