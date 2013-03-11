@@ -29,6 +29,8 @@ If you're running application on `localhost` or local *web server*, try the foll
 
     *don't forget to enable `mod_rewrite` module on your Apache configuration.*
 
+4.  Setup MySQL Database, create new database. Match your database `user`, `name` and `password` with `database.php` in directory application/config/ and  Export `ci-login.sql` using phpMyAdmin or another tools you like.
+
 Contact / Support 
 -----------------
 

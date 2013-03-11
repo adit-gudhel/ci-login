@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="span4">
-                    	<p class="text-center"><img class="img-circle" width="140" height="140" src="<?= base_url('img/'.$account['photo'].''); ?>"</p>
+                    	<p class="text-center"><img class="img-circle" width="140" height="140" src="<?= base_url('img/adit.jpg'); ?>"</p>
                     </div>
                 </div>            	                           	
             </div>
