@@ -23,7 +23,7 @@ class User extends CI_Controller
 		$this->load->model('account_model');		
 		$data['account'] = $this->account_model->lihat_data($this->session->userdata('username'));			
 		$data['content'] = 'user_detail';
-		$this->load->view('template/index', $data);;
+		$this->load->view('template/index', $data);
 	}
 	
 	public function is_logged_in(){
